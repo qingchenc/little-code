@@ -1,0 +1,160 @@
+
+/*基本样式*/
+* {margin: 0;padding: 0;box-sizing: border-box;}
+a {display: block;text-decoration: none;color: #ffffff;}
+em, i {font-style: normal;}
+ol, ul {list-style-type: none;}
+button {background: none;border: 0;cursor: pointer;}
+textarea, select {-webkit-appearance: none;-moz-appearance: none;appearance: none;outline: none;border: none;}
+body, p, h1, h2, h3, h4, h5, h6, input, textarea, ol, ul, dl, dt, dd, button {padding: 0;margin: 0;}
+
+/*浮动样式*/
+.pull-left{float: left;}
+.pull-right{float: right;}
+.clearFloat:after{content: "";display: block;height: 0;overflow: hidden;clear: both;}
+
+/*文本样式*/
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+/*定位样式*/
+.relative{position: relative;}
+.absolute{position: absolute;}
+.fixed{position: fixed;}
+
+/*透明度样式*/
+.opacity-0{opacity: 0;}
+.opacity-05{opacity: 0.5;}
+.opacity-1{opacity: 1;}
+
+/*flex布局样式*/
+.flex-container{display: flex;display: -webkit-flex;}
+.flex-align-center{align-items: center;}
+.flex-space-between{justify-content: space-between}
+.flex-1{flex: 1;}
+
+/*边框圆角样式*/
+.border-radius-2{border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;}
+.border-radius-4{border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;}
+
+/*内边距*/
+.padding-10{padding: 10px;}
+
+/*背景颜色*/
+.font-13{font-size: 13px;}
+
+/*背景颜色*/
+.bg-white{background-color: #ffffff;}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar{display: none;}
+
+/*公共页面样式*/
+#app{font-family: 'Avenir', Helvetica, Arial, sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;text-align: center;}
+body{background-color: #f7f8fa;}
+
+/**
+ * element-ui组件样式
+ */
+.el-upload{display: block;}
+
+/**
+ * 组件样式-configItem
+ */
+.config-item-content .config-item-label{
+  width: 120px;color: #969799;padding-top: 5px !important;
+}
+
+/**
+ * 配置组件样式-schemaUpload
+ */
+.upload-image{
+  display: block;width: 100%;
+}
+
+/**
+ * 配置组件样式-schemaObject
+ */
+.component-wrap .component-wrap-label{
+  padding: 10px 12px;background-color: #e8f0fb40;font-size: 14px;color: #323233;
+}
+.component-wrap .component-wrap-label span::before {
+  content: ".";width: 3px;height: 10px;margin-right: 8px;background-color: #155bd4;
+}
+.component-wrap .component-wrap-body{
+  padding-top: 20px;padding-bottom: 10px;
+}
+.component-wrap .component-wrap-body .component-wrap-line{
+  margin-top: 30px;height: 1px;background: #ebedf0;
+}
+
+
+
+/**
+ * 外层样式
+ */
+.mall-header{
+  width: 100%;height: 50px;background-color: #eee;
+}
+.mall-content{
+  width: 100%;
+}
+.mall-content .mall-component{
+  width: 20%;height: calc(100vh - 50px);background-color: #ffffff;padding: 15px 20px;
+}
+.mall-content .mall-page{
+  width: 52%;height: calc(100vh - 50px);padding: 15px 20px;
+}
+.mall-content .mall-style{
+  width: 28%;height: calc(100vh - 50px);background-color: #ffffff;padding: 15px 20px;
+}
+
+/**
+ * 左侧组件列表样式
+ */
+.component-item{
+  display: inline-flex;flex-direction: column;align-items: center;
+  width: 50%;padding: 15px 0;font-size: 14px;
+  color: #666;cursor: pointer;
+}
+.component-item i{
+  font-size: 28px;margin-top: 10px;margin-bottom: 10px;
+}
+
+/**
+ * 中间手机-样式
+ */
+.mall-page .page-content{
+  width: 450px;height: 806px !important;margin: 0 auto;background: url(https://shitangsys.cntdh.net/h6/6668.png) no-repeat;
+  background-size: 450px 806px;padding: 17px;display: block;
+}
+.mall-page .page-content .page-component-sort{
+  width: 363px;height: 680px;display: block;margin: 50px 27px 27px 27px;overflow: auto;
+  overflow-y: scroll;scrollbar-width: none;-ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+/**
+ * 媒体查询 - 平板尺寸 - 样式
+ */
+@media screen and (min-width:768px) and (max-width: 1300px){
+  .mall-page .page-content{
+    width: 600px;height: 1100px !important;background-size: 600px 1100px;
+  }
+  .mall-page .page-content .page-component-sort{
+    width: 86.3%;height: 89%;margin: 70px 40px 50px 40px;
+  }
+
+  .el-slider__button-wrapper{
+    top: -0.098125rem;
+  }
+
+  .component-input .el-input--small .el-input__inner{
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
